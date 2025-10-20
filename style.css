@@ -1,1 +1,47 @@
+/* Custom Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F4F6; /* Grey Neutral */
+}
+
+/* Gradient for Hero and Buttons */
+.innov8ion-gradient {
+    background: linear-gradient(135deg, #2563EB 0%, #38BDF8 100%);
+}
+
+/* Glassmorphism effect for cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Smooth transitions for interactive elements */
+.btn {
+    @apply px-6 py-3 rounded-lg font-semibold shadow-md transition-all duration-300 ease-in-out;
+}
+
+.btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+    @apply bg-white text-blue-600 border border-blue-600 hover:bg-blue-50;
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
